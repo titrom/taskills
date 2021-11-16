@@ -58,6 +58,8 @@ function selectAccount() {
 // in case of page refresh
 selectAccount();
 
+
+
 function handleResponse(response) {
     /**
      * To see the full list of response object properties, visit:
@@ -66,9 +68,11 @@ function handleResponse(response) {
 
     if (response !== null) {
         setAccount(response.account);
+        getCreate().then(console.log);
     } else {
         selectAccount();
     }
+
 }
 
 function signIn() {
@@ -137,7 +141,6 @@ function getTokenPopup(request) {
             }
         });
 }
-
 function passTokenToApi() {
     getTokenPopup(tokenRequest)
         .then(response => {
@@ -167,3 +170,5 @@ function editProfile() {
             console.log(error);
         });
 }
+
+
