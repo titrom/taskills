@@ -1,0 +1,16 @@
+.container{
+    width: 1140px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-around;
+}
+.settings-sight{
+    display: grid;
+    width: 300px;
+}
